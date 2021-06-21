@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main - Entry point for random number checker
  *
@@ -22,7 +21,7 @@ printf("%d is positive\n", n);
 }
 else
 {
-printf("0 is zero\n");
+printf("0 is zero\n", n);
 }
 return (0);
 }
