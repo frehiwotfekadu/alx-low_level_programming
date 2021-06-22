@@ -5,7 +5,7 @@
  *
  * Return: Always 0
  */
-int main()
+int main(void)
 {
 int i;
 char msg[] = "Holberton";
@@ -14,5 +14,5 @@ for (i = 0; i < strlen(msg); i++)
 putchar(msg[i]);
 }
 putchar('\n');
-return(0);
+return (0);
 }
