@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 /**
  * main - prints Holberton
  *
@@ -8,8 +7,8 @@
 int main(void)
 {
 int i;
-char msg[] = "Holberton";
-for (i = 0; i < strlen(msg); i++)
+char msg[9] = "Holberton";
+for (i = 0; i < 9; i++)
 {
 putchar(msg[i]);
 }
