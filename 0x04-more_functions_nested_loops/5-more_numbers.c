@@ -9,14 +9,18 @@ void more_numbers(void)
 {
 int i = 0;
 int j;
-while (i < 10)
+for (j = 0; j < 10; j++)
 {
-for (j = 0; j < 15; j++)
+i = 0;
+while (i <= 14)
 {
-_putchar(j + '0');
+if (i >= 10)
+{
+_putchar(i / 10 + '0');
 }
-_putchar('\n');
+_putchar(i % 10 + '0');
 i++;
 }
 _putchar('\n');
+}
 }
