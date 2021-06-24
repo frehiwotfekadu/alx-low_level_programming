@@ -14,6 +14,7 @@ if (res < 0)
 res *= -1;
 _putchar('-');
 }
+/**/
 temp = res;
 while (temp >= 10)
 {
