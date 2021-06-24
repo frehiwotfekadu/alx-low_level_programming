@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - prints the numbers from 1 to 100 but prints "Fizz" for multiples of 3
@@ -12,15 +13,15 @@ while (i < 101)
 {
 if ((i % 3 == 0 && (i % 5 == 0))
 {
-printf("FizzBuzz");
+printf("%s", "FizzBuzz");
 }
 else if (i % 3 == 0)
 {
-printf("Fizz");
+printf("%s", "Fizz");
 }
 else if (i % 5 == 0)
 {
-printf("Buzz");
+printf("%s", "Buzz");
 }
 else
 {
