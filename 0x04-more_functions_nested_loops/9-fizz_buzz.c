@@ -7,30 +7,23 @@
  */
 int main(void)
 {
-int i = 1;
-while (i < 101)
+int i;
+char a[] = "Fizz";
+char b[] = "Buzz";
+char c[] = "FizzBuzz";
+
+for (i = 1; i <= 100; i++)
 {
-if ((i % 3 == 0 && (i % 5 == 0))
-{
-printf("%s", "FizzBuzz");
-}
+if (i == 100)
+printf("%s", b);
+else if ((i % 3 == 0) && (i % 5 == 0))
+printf("%s ", c);
 else if (i % 3 == 0)
-{
-printf("%s", "Fizz");
-}
+printf("%s ", a);
 else if (i % 5 == 0)
-{
-printf("%s", "Buzz");
-}
+printf("%s ", b);
 else
-{
-printf("%d", i);
-}
-if (i != 100)
-{
-printf(" ");
-}
-i++;
+printf("%d ", i);
 }
 printf("\n");
 return (0);
