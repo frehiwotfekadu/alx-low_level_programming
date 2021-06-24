@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "holberton.h"
 #include <stdio.h>
 /**
  * main - prints the numbers from 1 to 100 but prints "Fizz" for multiples of 3
