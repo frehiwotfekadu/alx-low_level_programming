@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
  * print_triangle - Print a triangle dependent on the parameter size
  * @size : The size of the triangle
