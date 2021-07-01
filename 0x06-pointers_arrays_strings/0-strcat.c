@@ -2,9 +2,9 @@
 #include <stdio.h>
 /**
  * _strcat - concatenates two strings
- * @dest - char [] to be appended to
- * @src - char [] to append to dest
- * Retrun: Always 0
+ * @dest: char [] to be appended to
+ * @src: char [] to append to dest
+ * Return: Always 0
  */
 char *_strcat(char *dest, char *src)
 {
