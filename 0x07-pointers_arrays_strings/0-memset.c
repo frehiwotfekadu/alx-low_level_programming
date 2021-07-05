@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
- * _memset - fills memory with constant type
- * @s: string to map
- * @b: characters to replace
- * @n: number of characters to replace
- * Return: Always 0
+ * _memset - fills memory with a constant byte
+ * @s: memory area
+ * @b: constant byte
+ * @n: bytes of the memory area
+ * Return: pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int i;
-for (i = 0; i < n; i++)
-s[i] = b;
-return (s);
+char *ptr = s;
+while (n--)
+*s++ = b;
+return (ptr);
 }
