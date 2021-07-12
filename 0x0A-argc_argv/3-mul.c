@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - multiplies 2 arguements and prints results
- * @argc: arguemnet count
- * #argv: argument vector
- * Return: 0 if no error
+ * main - multiplies two arguments and prints result
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 if no errors
  */
 int main(int argc, char *argv[])
 {
