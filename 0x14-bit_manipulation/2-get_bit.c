@@ -24,7 +24,7 @@ return (ans);
 int get_bit(unsigned long int n, unsigned int index)
 {
 unsigned long int test;
-if (index > sizeof(n) * BIT_SIZE - 1)
+if (index > sizeof(n) * 8 - 1)
 return (-1);
 test = powX(2, index);
 if (test & n)
