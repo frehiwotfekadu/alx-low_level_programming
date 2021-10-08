@@ -1,32 +1,32 @@
 #include "hash_tables.h"
-#include <stdbool.h>
-
 /**
- * hash_table_print - prints a hash table
- * @ht: input ht
+ * hash_table_print - prints hashtable
+ * @ht: the hash table you want to print
  */
 void hash_table_print(const hash_table_t *ht)
 {
-register unsigned int i = 0;
-hash_node_t *curr = NULL;
-_Bool first = true;
 
-if (!ht)
+unsigned long int i;
+hash_node_t *node;
+short int comma = 0;
+
+if (ht == NULL)
 return;
-printf("{");
+
+putchar('{');
 for (i = 0; i < ht->size; i++)
 {
-if (ht->array[i])
+node = ht->array[i];
+while (node != NULL)
 {
-curr = ht->array[i];
-while (curr)
-{
-if (!first)
+if (comma)
 printf(", ");
-printf("'%s': '%s'", curr->key, curr->value);
-first = false;
-curr = curr->next;
-}
+
+printf("'%s': '%s'", node->key, node->value);
+node = node->next;
+
+if (comma == 0)
+comma = 1;
 }
 }
 printf("}\n");
